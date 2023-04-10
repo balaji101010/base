@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:starter/application/routes/router.dart';
+import 'package:starter/data/injection/injector.dart';
 import 'package:starter/presentation/styles/themes.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await configureDependencies();
   runApp(MyApp());
 }
 

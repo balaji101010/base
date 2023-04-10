@@ -5,7 +5,6 @@ import 'package:injectable/injectable.dart';
 ///
 /// [DialogService]
 ///
-@singleton
 class DialogService {
 
   ///
